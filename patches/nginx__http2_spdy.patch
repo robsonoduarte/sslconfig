@@ -225,8 +225,10 @@ index 7b051ea..97b71e7 100644
 +        *outlen = sizeof(NGX_SPDY_NPN_ADVERTISE NGX_HTTP_NPN_ADVERTISE) - 1;
 +
 +        return SSL_TLSEXT_ERR_OK;
-     }
++    } else
 +#endif
++    {
+     }
 +
 +#if (NGX_HTTP_V2 || NGX_HTTP_SPDY)
      }
